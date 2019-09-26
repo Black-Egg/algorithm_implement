@@ -67,9 +67,12 @@ class Solution{
         int i = 0;
         while(i < len - 1){
             // 此处不加条件 i < len - 1，会导致数组越界异常
+            // 寻找山谷
             while(i < len - 1 && prices[i] >= prices[i+1])
                 i++;
             valley = prices[i];
+
+            // 寻找山峰
             while(i  < len - 1 && prices[i] <= prices[i+1])
                 i++;
             peak = prices[i];
