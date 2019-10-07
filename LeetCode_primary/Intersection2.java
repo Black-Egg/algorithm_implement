@@ -35,5 +35,27 @@ class Solution {
 
 
     // 方法二： 排序后使用双指针。时间复杂度O(nlogn)，空间复杂度O(1)
-    
+     public int[] intersect2(int[] nums1, int[] nums2) {
+        Arrays.sort(nums1);
+        Arrays.sort(nums2);
+        int len = Math.min(nums1.length, nums2.length);
+        int[] res = new int[len];
+
+        int i = 0;
+        int j = 0;
+        int idx = 0;
+
+        while(i<nums1.length && j<nums2.length){
+            if(nums1[i] < nums2[j])
+                i++;
+            else if(nums1[i] > nums2[j])
+                j++;
+            else{
+                res[idx++] = nums1[i];
+                i++;
+                j++;
+            }
+        }
+        return Arrays.copyOf(res, idx);
+    }
 }
