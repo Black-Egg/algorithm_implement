@@ -14,5 +14,6 @@ public class ListTest{
         System.out.println(list1.size());       // 输出 9
         System.out.println(list1);              // 输出 [1, 2, 3, 4, 5, 6, 7, 8, 9]
         System.out.println(list1.toString());   // 输出 [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
     }
 }
