@@ -42,6 +42,12 @@ public class ArrayTest{
         System.out.println();
 
 
+        // 判断两个数组是否相同的函数
+        // 可用于比较byte[], short[], int[], long[], char[], float[], double[], boolean[]
+        Arrays.equals(array2, array4);
+        
+        // 可用于排序可用于比较byte[], short[], int[], long[], char[], float[], double[]
+        Arrays.sort(array2);
 
         
     }

@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
  
-public class Main {
+public class Transform {
     public static void main(String[] args) {
         int[] data = {4, 5, 3, 6, 2, 5, 1};
  
@@ -64,11 +64,27 @@ public class Main {
         List<String> list3 = Arrays.asList(strings1);
         // List<String> 转 String[]
         String[] strings2 = list3.toArray(new String[0]);
+        
         // String[] 转 Map<String>
         Set<String> set2 = new HashSet<String>(Arrays.asList(strings1));
         // Map<String> 转 String[]
         String[] strings3 = new String[set2.size()];     
         set2.toArray(strings3);
- 
+
+        // String转char[]
+        String s1 = "-12345";
+        char[] chrs1 = s1.toCharArray();
+
+        // char[] 转 String
+        String s2 = String.valueOf(chrs1);
+        String s3 = new String(chrs1);
+        System.out.println(s2);
+        System.out.println(s3);
+
+        // int 转 String
+        int i = 123;
+        String s4 = String.valueOf(i);
+        System.out.println(s4);
+        
     }
 }
