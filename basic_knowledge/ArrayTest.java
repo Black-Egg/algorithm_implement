@@ -43,12 +43,17 @@ public class ArrayTest{
 
 
         // 判断两个数组是否相同的函数
-        // 可用于比较byte[], short[], int[], long[], char[], float[], double[], boolean[]
+        // 可用于比较byte[], short[], int[], long[], char[], float[], double[], boolean[], String[]
         Arrays.equals(array2, array4);
         
-        // 可用于排序可用于比较byte[], short[], int[], long[], char[], float[], double[]
+        // 可用于排序可用于比较byte[], short[], int[], long[], char[], float[], double[], String[]
         Arrays.sort(array2);
 
-        
+        String[] arr1 = {"abcf", "fghl", "eljk", "zxy", "zzz"};
+        String[] arr2 = {"abcf", "fghl", "eljk", "zxy", "zzz"};
+        System.out.println(Arrays.equals(arr1, arr2));
+        Arrays.sort(arr1);
+        System.out.println(Arrays.toString(arr1));
+
     }
 }
