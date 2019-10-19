@@ -36,5 +36,6 @@ public class Maptest{
         map.forEach((key, value) -> {
             System.out.println(key + ":" + value);
         });
+
     }
 }
