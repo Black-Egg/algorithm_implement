@@ -10,5 +10,11 @@ public class StringBufferTest{
 
         sb.delete(0, sb.length());
         System.out.println(sb.toString());
+
+        int i, x;
+
+        for(;;x+=i){
+            System.out.println(x);
+        }
     }
 }
