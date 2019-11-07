@@ -12,7 +12,7 @@ class Y{
 }
 
 public class Text extends X{
-    Y y = new Y();
+    Y y = new Y;
     Text(){
         System.out.println("Z");
     }
