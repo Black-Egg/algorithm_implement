@@ -1,1 +1,0 @@
-![图1 贪心法求解](https://github.com/Black-Egg/algorithm_implement/blob/master/study_notes/ComputerNetwork/LeetCode122.png)
