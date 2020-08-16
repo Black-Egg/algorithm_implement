@@ -6,10 +6,14 @@ class Solution {
         int[][] newMatrix = new int[n][n];
         for (int i = 0; i < n; i++){
             for (int j = 0; j < n; j++){
-                newMatrix[i][j] = matrix[n - 1 - j][i];
+                newMatrix[i][j] = matrix[i][j];
             }
         }
-        return newMatrix;
+        for (int i = 0; i < n; i++){
+            for (int j = 0; j < n; j++){
+                matrix[i][j] = newMatrix[n - 1 - j][i];
+            }
+        }
     }
 
     // 不使用辅助数组的方案一，先转置（b[j][i] = a[i][j]），再水平翻转（b[i][j] = a[i][n - 1 -j]）

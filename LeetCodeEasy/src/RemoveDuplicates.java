@@ -75,6 +75,4 @@ public class RemoveDuplicates{
         slow.next = null;
         return head;
     }
-
-
 }

@@ -19,11 +19,10 @@ class Solution{
     // Hash表
     public int[] twoSum(int[] nums, int target) {
         int len = nums.length;
-        int tmp;
         int[] result = new int[2];
         Map<Integer, Integer> map = new HashMap<> ();
         for(int i=0; i<len; i++){
-            tmp = target - nums[i];
+            int tmp = target - nums[i];
             if(map.containsKey(tmp)){
                 result[0] = map.get(tmp);
                 result[1] = i;
