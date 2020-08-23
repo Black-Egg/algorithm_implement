@@ -25,7 +25,7 @@ import java.util.Map;
 import java.util.HashMap;
 class Solution {
 
-    // 方法一：利用HashMap. 时间复杂度O(N)，空间复杂度O(1)
+    // 方法一：利用HashMap. 时间复杂度O(N)，空间复杂度O(N)
     public int firstUniqChar1(String s) {
         Map<Character, Integer> map = new HashMap<>(26);
         for(int i=0; i<s.length(); i++){
@@ -39,8 +39,8 @@ class Solution {
     }
 
     // 方法二：利用数组替代HashMap，用0-25作为下标记录，字母出现的次数。
-    // 时间复杂度O(N)，空间复杂度O(1).
-    // 使用String.charAt()。时间在13ms左右
+    // 时间复杂度O(N)，空间复杂度O(N).
+    // 使用String.charAt()。是否有影响？
     public int firstUniqChar2(String s) {
         int[] times = new int[26];
         for(int i = 0; i < s.length(); i ++){
@@ -57,7 +57,7 @@ class Solution {
 
     // 方法三：利用数组替代HashMap，用0-25作为下标记录，字母出现的次数。
     // 时间复杂度O(N)，空间复杂度O(N).
-    // 先将String转换成char[]。时间在5ms左右
+    // 先将String转换成char[]，是否有影响？
     public int firstUniqChar3(String s) {
         int[] times = new int[26];
         char[] chars = s.toCharArray();
@@ -75,7 +75,7 @@ class Solution {
     // 方法四：利用数组替代HashMap，用0-25作为下标记录，字母出现的次数。
     // 时间复杂度O(N)，空间复杂度O(N).
     // 先将String转换成char[]。
-    // 使用for(char t : chars) 替换 for(int i; i< chars.length; i++)，对运行时间无影响。时间在5ms左右
+    // 使用for(char t : chars) 替换 for(int i; i< chars.length; i++)，对运行时间是否有影响？
     public int firstUniqChar4(String s) {
         int idx = 0;
         int[] times = new int[26];

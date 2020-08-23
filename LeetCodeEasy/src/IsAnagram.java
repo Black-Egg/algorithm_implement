@@ -54,7 +54,7 @@ class Solution {
         return true;
     }
 
-    // 方法二 换种比较方式
+    // 方法二 另外一种比较方式
     public boolean isAnagram2(String s, String t) {
         if(s.length() != t.length())
             return false;

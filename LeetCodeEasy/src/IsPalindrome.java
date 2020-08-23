@@ -54,7 +54,7 @@ class Solution {
             return false;
     }
 
-    // 方法一：先将String转换成小写再转换成char[]，之后利用双指针法
+    // 方法二：先将String转换成小写再转换成char[]，之后利用双指针法
     // 前后指针均跳过非数字或字母的字符，
     // 比较前后指针指向的字符是否相等，若不等，则返回false
     public boolean isPalindrome2(String s) {
